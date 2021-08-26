@@ -42,12 +42,14 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(TENSORFLOW_SOURCE_DIR "" CACHE PATH
   "Directory that contains the TensorFlow project"
 )
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 if(NOT TENSORFLOW_SOURCE_DIR)
   get_filename_component(TENSORFLOW_SOURCE_DIR
     "${CMAKE_CURRENT_LIST_DIR}/../../"
     ABSOLUTE
   )
 endif()
+message("tensorflow source dir ${TENSORFLOW_SOURCE_DIR}")
 set(TF_SOURCE_DIR "${TENSORFLOW_SOURCE_DIR}/tensorflow")
 set(TFLITE_SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}")
 set(CMAKE_MODULE_PATH
@@ -128,6 +130,7 @@ macro(populate_tf_source_vars RELATIVE_DIR SOURCES_VAR)
   )
 endmacro()
 # Find TensorFlow Lite dependencies.
+message("cmake module path: ${CMAKE_MODULE_PATH}")
 find_package(absl REQUIRED)
 find_package(eigen REQUIRED)
 find_package(farmhash REQUIRED)
@@ -136,6 +139,10 @@ find_package(flatbuffers REQUIRED)
 find_package(gemmlowp REQUIRED)
 find_package(neon2sse REQUIRED)
 find_package(ruy REQUIRED)
+find_package(PkgConfig REQUIRED)
+
+pkg_check_modules(OPENCV REQUIRED IMPORTED_TARGET opencv)
+
 # Generate TensorFlow Lite FlatBuffer code.
 # We used to have an actual compilation logic with flatc but decided to use
 # schema_generated.h since flatc doesn't work with cross compilation.
@@ -391,6 +398,8 @@ include_directories(
     ${TFLITE_INCLUDE_DIRS}
 )
 
+message("cmake include dirs: ${TFLITE_INCLUDE_DIRS}")
+
 # TFLite library
 add_library(tensorflow-lite
   ${TFLITE_CORE_API_SRCS}
@@ -441,6 +450,30 @@ target_link_libraries(tensorflow-lite
     ${TFLITE_TARGET_DEPENDENCIES}
 )
 
+message("opencv include: ${OPENCV_INCLUDE_DIRS}")
+message("opencv lib dir: ${OPENCV_LIBRARY_DIRS}")
+message("opencv libs: ${OPENCV_LIBRARIES}")
+include_directories(
+	${OPENCV_INCLUDE_DIRS}
+)
+
+add_executable(study
+	main.cc
+)
+target_link_libraries(study PUBLIC
+	PkgConfig::OPENCV
+	tensorflow-lite
+)
+
+message("current binary dir: ${CMAKE_CURRENT_BINARY_DIR}")
+message("current source dir: ${CMAKE_CURRENT_SOURCE_DIR}")
+IF(EXISTS "${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json")       
+    EXECUTE_PROCESS( COMMAND ${CMAKE_COMMAND} -E copy_if_different   
+        ${CMAKE_CURRENT_BINARY_DIR}/compile_commands.json            
+        ${CMAKE_CURRENT_SOURCE_DIR}/compile_commands.json            
+    )                                                                
+ENDIF()                                                              
+
 if (NOT BUILD_SHARED_LIBS)
   list(APPEND TFLITE_TARGET_PUBLIC_OPTIONS "-DTFL_STATIC_LIBRARY_BUILD")
 endif()
@@ -487,4 +520,13 @@ target_link_libraries(_pywrap_tensorflow_interpreter_wrapper
 target_compile_options(_pywrap_tensorflow_interpreter_wrapper
   PUBLIC ${TFLITE_TARGET_PUBLIC_OPTIONS}
   PRIVATE ${TFLITE_TARGET_PRIVATE_OPTIONS}
+)
+
+set(DT_DIR "dt")
+set(DT_FILE_NAME "dependency_tree")
+add_custom_target(graphviz ALL
+	WORKING_DIRECTORY "${CMAKE_BINARY_DIR}"
+	COMMAND mkdir -p ${DT_DIR}
+	COMMAND ${CMAKE_COMMAND} "--graphviz=${DT_DIR}/${DT_FILE_NAME}.dot" ..
+	COMMAND dot -Tpng ${DT_DIR}/${DT_FILE_NAME}.dot -o ${DT_FILE_NAME}.png
 )
