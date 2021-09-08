@@ -1,0 +1,16 @@
+$10 = std::vector of length 3, capacity 4 = {{
+    type = tflite::NodeSubset::kTfPartition, 
+    nodes = std::vector of length 29, capacity 32 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28}, 
+    input_tensors = std::vector of length 57, capacity 64 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29, 30, 32, 35, 36, 39, 40, 43, 44, 47, 48, 51, 52, 55, 56, 59, 60, 63, 64, 67, 68, 71, 72, 75, 76, 79, 80, 83, 84, 87}, 
+    output_tensors = std::vector of length 1, capacity 1 = {28}
+  }, {
+    type = tflite::NodeSubset::kTfNonPartition, 
+    nodes = std::vector of length 1, capacity 1 = {29}, 
+    input_tensors = std::vector of length 1, capacity 1 = {28}, 
+    output_tensors = std::vector of length 1, capacity 1 = {31}
+  }, {
+    type = tflite::NodeSubset::kTfPartition, 
+    nodes = std::vector of length 1, capacity 1 = {30}, 
+    input_tensors = std::vector of length 1, capacity 1 = {31}, 
+    output_tensors = std::vector of length 1, capacity 1 = {86}
+  }}

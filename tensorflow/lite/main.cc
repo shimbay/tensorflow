@@ -3,7 +3,9 @@
 #include <opencv2/opencv.hpp>
 #include <string>
 
+#include "tensorflow/lite/c/common.h"
 #include "tensorflow/lite/interpreter.h"
+#include "tensorflow/lite/interpreter_builder.h"
 #include "tensorflow/lite/kernels/register.h"
 #include "tensorflow/lite/model.h"
 #include "tensorflow/lite/model_builder.h"
@@ -17,8 +19,7 @@
 
 int main() {
   std::string model_path =
-      "/workspace/sunyunbo/src/ai/tensorflow_study/model/"
-      "mobilenet_v1_1.0_224.tflite";
+      "/home/sunyunbo/data/model/model/mobilenet_v1_1.0_224.tflite";
   std::string image_path = "";
 
   std::unique_ptr<tflite::FlatBufferModel> model =

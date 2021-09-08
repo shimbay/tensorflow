@@ -44,6 +44,12 @@ gradleBuild
 /tensorflow/lite/**/swift/BUILD
 /tensorflow/lite/examples/ios/simple/data/*.tflite
 /tensorflow/lite/examples/ios/simple/data/*.txt
+/tensorflow/lite/.cache
+/tensorflow/lite/compile_commands.json
+/tensorflow/lite/html
+/tensorflow/lite/latex
 Podfile.lock
 Pods
 xcuserdata
+.cache
+compile_commands.json

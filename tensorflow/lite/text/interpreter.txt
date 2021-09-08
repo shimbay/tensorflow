@@ -1,0 +1,28 @@
+$3 = {
+  static kTensorsReservedCapacity = 128, 
+  static kTensorsCapacityHeadroom = 16, 
+  context_ = 0xe851d8, 
+  error_reporter_ = 0xe7cc70, 
+  owned_delegates_ = std::vector of length 1, capacity 1 = {std::unique_ptr<TfLiteDelegate> = {
+      get() = 0xe914c0
+    }}, 
+  owned_profiler_ = std::unique_ptr<tflite::Profiler> = {
+    get() = 0x0
+  }, 
+  installed_profiler_ = 0x0, 
+  allow_buffer_handle_output_ = false, 
+  external_contexts_ = {0xe8e4f0, 0x0, 0x0, 0xe7cd50}, 
+  own_external_cpu_backend_context_ = std::unique_ptr<tflite::ExternalCpuBackendContext> = {
+    get() = 0xe7cd50
+  }, 
+  subgraphs_ = std::vector of length 1, capacity 1 = {std::unique_ptr<tflite::Subgraph> = {
+      get() = 0xe851b0
+    }}, 
+  resources_ = std::unordered_map with 0 elements, 
+  resource_ids_ = std::map with 0 elements, 
+  initialization_status_map_ = std::unordered_map with 0 elements, 
+  lazy_delegate_providers_ = std::vector of length 0, capacity 0, 
+  signature_defs_ = std::vector of length 0, capacity 0, 
+  signature_runner_map_ = std::map with 0 elements, 
+  metadata_ = std::map with 0 elements
+}

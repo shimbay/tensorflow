@@ -1,0 +1,679 @@
+$13 = {
+  <tflite::MemoryPlanner> = {
+    _vptr.MemoryPlanner = 0xe65918 <vtable for tflite::ArenaPlanner+16>
+  }, 
+  members of tflite::ArenaPlanner: 
+  context_ = 0xe851d8, 
+  graph_info_ = std::unique_ptr<tflite::GraphInfo> = {
+    get() = 0xe93be0
+  }, 
+  allocs_ = std::vector of length 103, capacity 103 = {{
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 602112, 
+      size = 4004, 
+      tensor = 28, 
+      first_node = 0, 
+      last_node = 1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 606144, 
+      size = 4004, 
+      tensor = 31, 
+      first_node = 1, 
+      last_node = 2
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 602112, 
+      size = 4004, 
+      tensor = 86, 
+      first_node = 2, 
+      last_node = 2147483647
+    }, {
+      offset = 0, 
+      size = 602112, 
+      tensor = 87, 
+      first_node = 0, 
+      last_node = 2147483647
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }, {
+      offset = 0, 
+      size = 0, 
+      tensor = -1, 
+      first_node = -1, 
+      last_node = -1
+    }}, 
+  alloc_node_ = std::vector of length 103, capacity 103 = {2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 0, 2147483647, 2147483647, 1, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2, 0, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647}, 
+  dealloc_node_ = std::vector of length 103, capacity 103 = {2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 1, 2147483647, 2147483647, 2, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647}, 
+  arena_ = {
+    committed_ = true, 
+    arena_alignment_ = 64, 
+    high_water_mark_ = 610148, 
+    underlying_buffer_ = std::unique_ptr<char []> = {
+      get() = 0x7ffff49a0010 ""
+    }, 
+    underlying_buffer_size_ = 610276, 
+    underlying_buffer_aligned_ptr_ = 0x7ffff49a0040 "", 
+    ordered_allocs_ = std::vector of length 4, capacity 4 = {{
+        offset = 0, 
+        size = 602112, 
+        tensor = 87, 
+        first_node = 0, 
+        last_node = 2147483647
+      }, {
+        offset = 602112, 
+        size = 4004, 
+        tensor = 28, 
+        first_node = 0, 
+        last_node = 1
+      }, {
+        offset = 602112, 
+        size = 4004, 
+        tensor = 86, 
+        first_node = 2, 
+        last_node = 2147483647
+      }, {
+        offset = 606144, 
+        size = 4004, 
+        tensor = 31, 
+        first_node = 1, 
+        last_node = 2
+      }}
+  }, 
+  persistent_arena_ = {
+    committed_ = true, 
+    arena_alignment_ = 64, 
+    high_water_mark_ = 0, 
+    underlying_buffer_ = std::unique_ptr<char []> = {
+      get() = 0xe94020 "ؼ\n\367\377\177"
+    }, 
+    underlying_buffer_size_ = 128, 
+    underlying_buffer_aligned_ptr_ = 0xe94040 "", 
+    ordered_allocs_ = std::vector of length 0, capacity 0
+  }, 
+  preserve_all_tensors_ = false, 
+  tensor_alignment_ = 64
+}

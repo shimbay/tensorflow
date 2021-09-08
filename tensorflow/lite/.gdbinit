@@ -1,3 +1,2 @@
-file build/study
-set print pretty on
+file ./build/study
 load
